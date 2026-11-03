@@ -20,12 +20,6 @@ This repository contains the frontend application of PlateWise, built with React
 
   ## 📸 Application Screenshots
 
-###Login
-![Login](Screenshot 2026-11-03 215858.png)
-
-### Dashboard
-![Dashboard](localhost_5173_dashboard (1).png)
-
 ### Pantry Management
 ![Pantry](localhost_5173_pantry.png)
 
