@@ -18,6 +18,21 @@ This repository contains the frontend application of PlateWise, built with React
 - **Weekly Insights** – Review nutrition and food-related progress.
 - **AI Nutrition Advisor** – Get nutrition-related assistance powered by Google Gemini.
 
+  ## 📸 Application Screenshots
+
+###Login
+![Login](Screenshot 2026-11-03 215858.png)
+
+### Dashboard
+![Dashboard](localhost_5173_dashboard (1).png)
+
+### Pantry Management
+![Pantry](localhost_5173_pantry.png)
+
+### Shopping List
+![Shopping List](localhost_5173_shopping-list.png)
+
+
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
