@@ -1,75 +1,113 @@
-# React + TypeScript + Vite
+# PlateWise – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Smart nutrition, made simple.**
 
-Currently, two official plugins are available:
+PlateWise is a smart nutrition and meal-planning web application designed to help users make healthier food choices, manage their pantry, track their daily food intake, and achieve their nutrition goals.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the frontend application of PlateWise, built with React, TypeScript, and Vite.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **User Authentication** – Register and log in securely.
+- **Personalized Onboarding** – Set up personal details, dietary preferences, and nutrition goals.
+- **BMI & Nutrition Goals** – View BMI information and personalized calorie and protein targets.
+- **Pantry Management** – Manage available food items.
+- **Meal & Recipe Management** – Explore recipes and meal suggestions.
+- **Food Diary** – Track daily food intake.
+- **Shopping List** – Organize grocery shopping.
+- **Weekly Insights** – Review nutrition and food-related progress.
+- **AI Nutrition Advisor** – Get nutrition-related assistance powered by Google Gemini.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology | Purpose |
+|---|---|
+| React 19 | User interface |
+| TypeScript | Type-safe development |
+| Vite | Development server and build tool |
+| Tailwind CSS 4 | Styling |
+| React Router | Client-side navigation |
+| Recharts | Data visualization |
+| Lucide React | Icons |
+| Google Gemini AI | AI-powered nutrition assistance |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+client/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── lib/
+│   └── ...
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+*The structure may evolve as the application develops.*
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
+- Node.js
+- npm
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/dinuri144/PlateWise-Frontend.git
 ```
+
+### 2. Navigate to the project folder
+
+```bash
+cd PlateWise-Frontend
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file if required by the application.
+
+Add the necessary configuration values based on your local backend and Gemini AI setup. Never commit secret API keys.
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to access the application.
+
+## 📦 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the production application |
+| `npm run lint` | Run ESLint checks |
+| `npm run preview` | Preview the production build |
+
+## 🔗 Related Repository
+
+**Backend:** [PlateWise-Backend](https://github.com/dinuri144/PlateWise-Backend)
+
+## 👩‍💻 Author
+
+Developed as a personal software development project.
+
+**GitHub:** [@dinuri144](https://github.com/dinuri144)
+
+---
+
+*PlateWise – Making healthier food choices simpler.*
